@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .box{
+        width: 200px;
+        height: 200px;
+        margin: 200px auto;
+        position: relative;
+        transform-style: preserve-3d;
+        perspective: 99999px;
+        transform:rotateX(20deg) rotateY(20deg);
+        animation: zft 4s linear infinite;
+
+
+
+    }
+
+    .box div{
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        text-align: center;
+        line-height: 100px;
+
+
+    }
+    .box:hover .top1{
+        transform:rotateX(90deg) translateZ(200px);
+        transition: all 1s;
+
+    }
+    .box:hover .bottom1{
+        transform:rotateX(-90deg) translateZ(200px);
+        transition: all 1s;
+    }
+    .box:hover .front1{
+        transform: translateZ(200px);
+        transition: all 1s;
+    }
+    .box:hover .back1{
+        transform:rotateY(180deg) translateZ(200px);
+        transition: all 1s;
+    }
+    .box:hover .left1{
+        transform:rotateY(-90deg) translateZ(200px);
+        transition: all 1s;
+    }
+    .box:hover .right1{
+        transform:rotateY(90deg) translateZ(200px);
+        transition: all 1s;
+    }
+    .box1{
+        margin: 50px;
+    }
+    .top{
+        width: 100px;
+        height: 100px;
+        box-shadow: 0px 0px 40px rgba(255, 158, 250, 0.97);
+        transform: rotateX(90deg) translateZ(50px);
+
+
+
+    }
+    .top1{
+        width: 200px;
+        height: 200px;
+        box-shadow: 0px 0px 40px rgba(255, 158, 250, 0.97);
+        transform: rotateX(90deg) translateZ(100px);
+
+    }
+    .bottom{
+        width: 100px;
+        height: 100px;
+        box-shadow: 0px 0px 40px rgba(255, 158, 250, 0.97);
+        transform: rotateX(-90deg) translateZ(50px);
+
+
+    }
+    .bottom1{
+        width: 200px;
+        height: 200px;
+        box-shadow: 0px 0px 40px rgba(255, 158, 250, 0.97);
+        transform: rotateX(-90deg) translateZ(100px);
+    }
+    .front{
+        width: 100px;
+        height: 100px;
+        box-shadow: 0px 0px 40px rgba(255, 158, 250, 0.97);
+        transform:  translateZ(50px);
+
+
+    }
+    .front1{
+        width: 200px;
+        height: 200px;
+        box-shadow: 0px 0px 40px rgba(255, 158, 250, 0.97);
+        transform:  translateZ(100px);
+    }
+    .back{
+        width: 100px;
+        height: 100px;
+        box-shadow: 0px 0px 40px rgba(255, 158, 250, 0.97);
+        transform: rotateY(180deg) translateZ(50px);
+
+
+    }
+    .back1{
+        width: 200px;
+        height: 200px;
+        box-shadow: 0px 0px 40px rgba(255, 158, 250, 0.97);
+        transform: rotateY(180deg) translateZ(100px);
+    }
+    .left{
+        width: 100px;
+        height: 100px;
+        box-shadow: 0px 0px 40px rgba(255, 158, 250, 0.97);
+        transform: rotateY(-90deg) translateZ(50px);
+
+
+    }
+    .left1{
+        width: 200px;
+        height: 200px;
+        box-shadow: 0px 0px 40px rgba(255, 158, 250, 0.97);
+        transform: rotateY(-90deg) translateZ(100px);
+    }
+    .right{
+        width: 100px;
+        height: 100px;
+        box-shadow: 0px 0px 40px rgba(255, 158, 250, 0.97);
+        transform: rotateY(90deg) translateZ(50px);
+
+
+    }
+    .right1{
+        width: 200px;
+        height: 200px;
+        box-shadow: 0px 0px 40px rgba(255, 158, 250, 0.97);
+        transform: rotateY(90deg) translateZ(100px);
+    }
+    @keyframes zft {
+        0%{
+            transform: rotateX(0deg) rotateZ(0deg);
+
+        }
+        100%{
+            transform: rotateX(360deg) rotateZ(360deg);
+        }
+    }
+</style>
+<body>
+<div class="box">
+    <div class="box1">
+        <div class="top"><img src="op2.jpeg" alt="" width="100px" height="100px"> </div>
+        <div class="bottom"><img src="op2.jpeg" alt="" width="100px" height="100px"> </div>
+        <div class="front"><img src="op2.jpeg" alt="" width="100px" height="100px"></div>
+        <div class="back"><img src="op2.jpeg" alt="" width="100px" height="100px"></div>
+        <div class="left"><img src="op2.jpeg" alt="" width="100px" height="100px"></div>
+        <div class="right"><img src="op2.jpeg" alt="" width="100px" height="100px"></div>
+    </div>
+
+
+    <div class="top1"><img src="op1.jpeg" alt="" width="200px" height="200px"> </div>
+    <div class="bottom1"> <img src="op1.jpeg" alt="" width="200px" height="200px"></div>
+    <div class="front1"><img src="op1.jpeg" alt="" width="200px" height="200px"></div>
+    <div class="back1"><img src="op1.jpeg" alt="" width="200px" height="200px"></div>
+    <div class="left1"><img src="op1.jpeg" alt="" width="200px" height="200px"></div>
+    <div class="right1"><img src="op1.jpeg" alt="" width="200px" height="200px"></div>
+
+</div>
+</body>
+</html>

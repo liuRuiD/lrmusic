@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .liu{
+        width: 400px;
+        margin-top: 200px ;
+
+        animation: boom 1s infinite;
+    }
+    body{
+        background-color: rgba(0, 0, 0, 0.08);
+    }
+    .left,.right{
+        width: 220px;
+        height: 220px;
+        background-color: #000000;
+        box-shadow: 0px 0px 40px #000000;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+    }
+    .right{
+        right: 0;
+    }
+    .left{
+        left: 0;
+    }
+    .a{
+        width: 220px;
+        height: 220px;
+        background-color: #000000;
+        box-shadow: 0px 0px 40px #000000;
+        transform: rotate(45deg);
+        position: absolute;
+        top: 89px;
+        left: 90px;
+    }
+    @keyframes boom {
+        0%{
+            transform: scale(1);
+        }
+        100%{
+            transform: scale(1.2);
+        }
+    }
+
+</style>
+<body>
+<div class="liu">
+    <div class="left"></div>
+    <div class="right"></div>
+    <div class="a"></div>
+
+</div>
+</body>
+</html>

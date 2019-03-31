@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title></head>
+
+<style>
+    * {
+        margin: 0 ;
+        padding: 0 ;
+    }
+    ul{
+        list-style: none;
+        width: 288px
+
+    }
+    li{
+        height: 69px;
+        width: 70px;
+        border: 1px solid #000000;
+        float: left;
+        margin-top: -1px ;
+        margin-left:-1px;
+    }
+   span{
+       display: block;
+       height: 24px;
+       width: 24px;
+       background: url("123.png");
+       margin: 10px auto;
+
+   }
+    .box{
+        margin: 50px auto;
+        margin-left:300px;
+    }
+   p{
+       text-align: center;
+   }
+</style>
+<body>
+<div class = "box">
+<ul>
+    <li>
+        <span></span>
+        <p>充话费</p>
+    </li>
+    <li>
+        <span></span>
+        <p>旅行</p>
+    </li>
+    <li>
+        <span></span>
+        <p>车险</p>
+    </li>
+    <li>
+        <span></span>
+        <p>游戏</p>
+    </li>
+    <li>
+        <span></span>
+        <p>理财</p>
+    </li>
+    <li>
+        <span></span>
+        <p>充话费</p>
+    </li>
+    <li>
+        <span></span>
+        <p>理财</p>
+    </li>
+    <li>
+        <span></span>
+        <p>旅行</p>
+    </li>
+    <li>
+        <span></span>
+         <p>车险</p>
+    </li>
+    <li>
+        <span></span>
+        <p>车险</p>
+    </li>
+    <li>
+        <span></span>
+        <p>车险</p>
+    </li>
+    <li>
+        <span></span>
+        <p>车险</p>
+    </li>
+
+</>
+</div>
+<script>
+    var spans = document.querySelectorAll('span');
+    for( var i=0;spans.length;i++){
+        spans[i].style.backgroundPositionY = -44 * i +'px';
+    }
+
+</script>
+</body>
+</html>
